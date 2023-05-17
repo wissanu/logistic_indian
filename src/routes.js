@@ -6,6 +6,7 @@ import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import DataTables from "views/admin/tables";
 import MarginView from "views/admin/marginsummary";
+import DashboardCommercialView from "views/admin/dashboardcommercial";
 import RTLDefault from "views/rtl/default";
 
 // Auth Imports
@@ -25,9 +26,10 @@ const routes = [
   {
     name: "Dashboard (Commercial)",
     layout: "/admin",
-    path: "default",
+    path: "commercial_dashboard",
     icon: <MdViewModule className="h-6 w-6" />,
-    component: <MainDashboard />,
+    // component: <MainDashboard />,
+    component: <DashboardCommercialView />,
   },
   {
     name: "Dashboard (Finance)",
