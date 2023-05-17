@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-import CardMenu from "components/card/CardMenu";
 import Card from "components/card";
 import {
   BarChart,
@@ -64,7 +63,7 @@ export default class ColumnChartPanel extends PureComponent {
   render() {
     return (
       <Card extra={"w-full pb-10 p-4 h-96"}>
-        <header className="relative flex items-center justify-between mb-4">
+        <header className="relative mb-4 flex items-center justify-between">
           <div className="text-xl font-bold text-navy-700 dark:text-white">
             Total Revenue (THB)
           </div>

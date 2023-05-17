@@ -34,9 +34,9 @@ const routes = [
   {
     name: "Dashboard (Finance)",
     layout: "/admin",
-    path: "nft-marketplace",
+    path: "financial_dashboard",
     icon: <MdViewModule className="h-6 w-6" />,
-    component: <NFTMarketplace />,
+    component: <DashboardCommercialView />,
     secondary: true,
   },
   {
