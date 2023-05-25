@@ -16,7 +16,7 @@ const Storage = () => {
         <h4 className="mb-px mt-3 text-2xl font-bold text-navy-700 dark:text-white">
           Your storage
         </h4>
-        <p className="px-5 text-center text-base font-normal text-gray-600 md:!px-0 xl:!px-8">
+        <p className="px-5 text-center text-sm font-normal text-gray-600 md:!px-0 xl:!px-8">
           Supervise your drive space in the easiest way
         </p>
       </div>

@@ -38,7 +38,7 @@ const ComplexTable = (props) => {
   return (
     <Card extra={"w-full h-full px-6 pb-6 sm:overflow-x-auto"}>
       <div class="relative flex items-center justify-between pt-4">
-        <div class="text-xl font-bold text-navy-700 dark:text-white">
+        <div class="text-sm font-bold text-navy-700 dark:text-white">
           Complex Table
         </div>
         <CardMenu />
@@ -53,7 +53,7 @@ const ComplexTable = (props) => {
                   <th
                     {...column.getHeaderProps(column.getSortByToggleProps())}
                     key={index}
-                    className="border-b border-gray-200 pb-[10px] text-start pe-28 dark:!border-navy-700"
+                    className="border-b border-gray-200 pb-[10px] pe-28 text-start dark:!border-navy-700"
                   >
                     <p className="text-xs tracking-wide text-gray-600">
                       {column.render("Header")}
@@ -79,7 +79,7 @@ const ComplexTable = (props) => {
                     } else if (cell.column.Header === "STATUS") {
                       data = (
                         <div className="flex items-center gap-2">
-                          <div className={`rounded-full text-xl`}>
+                          <div className={`rounded-full text-sm`}>
                             {cell.value === "Approved" ? (
                               <MdCheckCircle className="text-green-500" />
                             ) : cell.value === "Disable" ? (
@@ -104,7 +104,7 @@ const ComplexTable = (props) => {
                     }
                     return (
                       <td
-                        className="pt-[14px] pb-[18px] sm:text-[14px]"
+                        className="pb-[18px] pt-[14px] sm:text-[14px]"
                         {...cell.getCellProps()}
                         key={index}
                       >

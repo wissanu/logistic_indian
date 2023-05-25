@@ -30,7 +30,7 @@ const PieChartCard = () => {
             <div className="h-2 w-2 rounded-full bg-brand-500" />
             <p className="text-sm font-normal text-gray-600 ms-1">Your Files</p>
           </div>
-          <p className="mt-px text-xl font-bold text-navy-700  dark:text-white">
+          <p className="mt-px text-sm font-bold text-navy-700  dark:text-white">
             63%
           </p>
         </div>
@@ -42,7 +42,7 @@ const PieChartCard = () => {
             <div className="h-2 w-2 rounded-full bg-[#6AD2FF]" />
             <p className="text-sm font-normal text-gray-600 ms-1">System</p>
           </div>
-          <p className="mt-px text-xl font-bold text-navy-700 dark:text-white">
+          <p className="mt-px text-sm font-bold text-navy-700 dark:text-white">
             25%
           </p>
         </div>

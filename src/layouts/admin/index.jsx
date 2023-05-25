@@ -13,7 +13,7 @@ export default function Admin(props) {
 
   React.useEffect(() => {
     window.addEventListener("resize", () =>
-      window.innerWidth < 1200 ? setOpen(false) : setOpen(true)
+      window.innerWidth < 1000 ? setOpen(false) : setOpen(true)
     );
   }, []);
   React.useEffect(() => {
@@ -81,7 +81,9 @@ export default function Admin(props) {
 
                 <Route
                   path="/"
-                  element={<Navigate to="/admin/default" replace />}
+                  element={
+                    <Navigate to="/admin/commercial_dashboard" replace />
+                  }
                 />
               </Routes>
             </div>

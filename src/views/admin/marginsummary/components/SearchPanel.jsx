@@ -7,7 +7,7 @@ const SearchPanel = () => {
   return (
     <Card extra={"w-full h-full p-4"}>
       <div class="relative flex items-center justify-between">
-        <div class="text-xl font-bold text-navy-700 dark:text-white">
+        <div class="text-sm font-bold text-navy-700 dark:text-white">
           Search Criteria
         </div>
         <CardMenu />
@@ -15,7 +15,7 @@ const SearchPanel = () => {
 
       <div class="h-full overflow-x-scroll xl:overflow-x-hidden">
         <div class="mt-5 grid grid-cols-4 gap-5 md:grid-cols-3">
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             Job Order No
             <input
               class="focus:shadow-outline mt-1 w-full appearance-none rounded border border-gray-400 px-2 py-2 leading-tight text-gray-700 shadow focus:outline-none"
@@ -24,7 +24,7 @@ const SearchPanel = () => {
               placeholder=""
             />
           </div>
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             Tracking No
             <input
               class="focus:shadow-outline mt-1 w-full appearance-none rounded border border-gray-400 px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
@@ -33,10 +33,10 @@ const SearchPanel = () => {
               placeholder=""
             />
           </div>
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             <div class="relative flex items-center">
               Shipment Type
-              <p class="text-base font-bold text-red-700 dark:text-white">*</p>
+              <p class="text-sm font-bold text-red-700 dark:text-white">*</p>
             </div>
             <div class="relative mt-1 inline-block w-full">
               <select class="focus:shadow-outline block w-full appearance-none rounded border border-gray-400 bg-white px-4 py-2 pr-8 leading-tight shadow hover:border-gray-500 focus:outline-none">
@@ -55,7 +55,7 @@ const SearchPanel = () => {
               </div> */}
             </div>
           </div>
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             Branch
             <input
               class="focus:shadow-outline mt-1 w-full rounded border border-gray-400 px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
@@ -65,7 +65,7 @@ const SearchPanel = () => {
             />
           </div>
           {/* <div class=""></div> */}
-          <div class="relative max-w-sm text-base font-bold text-gray-700 dark:text-white">
+          <div class="relative max-w-sm text-sm font-bold text-gray-700 dark:text-white">
             Date From
             <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 pt-5">
               <svg
@@ -89,7 +89,7 @@ const SearchPanel = () => {
               placeholder=""
             />
           </div>
-          <div class="relative max-w-sm text-base font-bold text-gray-700 dark:text-white">
+          <div class="relative max-w-sm text-sm font-bold text-gray-700 dark:text-white">
             Date To
             <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 pt-5">
               <svg
@@ -113,7 +113,7 @@ const SearchPanel = () => {
               placeholder=""
             />
           </div>
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             Status
             <div class="relative mt-1 inline-block w-full">
               <select class="focus:shadow-outline block w-full appearance-none rounded border border-gray-400 bg-white px-4 py-2 pr-8 leading-tight shadow hover:border-gray-500 focus:outline-none">
@@ -132,7 +132,7 @@ const SearchPanel = () => {
               </div> */}
             </div>
           </div>
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             Shipper
             <input
               class="focus:shadow-outline mt-1 w-full appearance-none rounded border border-gray-400 px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
@@ -141,7 +141,7 @@ const SearchPanel = () => {
               placeholder=""
             />
           </div>
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             Vessel
             <input
               class="focus:shadow-outline mt-1 w-full appearance-none rounded border border-gray-400 px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
@@ -150,7 +150,7 @@ const SearchPanel = () => {
               placeholder=""
             />
           </div>
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             Voyage
             <input
               class="focus:shadow-outline mt-1 w-full appearance-none rounded border border-gray-400 px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
@@ -159,7 +159,7 @@ const SearchPanel = () => {
               placeholder=""
             />
           </div>
-          <div class="text-base font-bold text-gray-700 dark:text-white">
+          <div class="text-sm font-bold text-gray-700 dark:text-white">
             Consignee
             <input
               class="focus:shadow-outline mt-1 w-full appearance-none rounded border border-gray-400 px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
@@ -169,10 +169,10 @@ const SearchPanel = () => {
             />
           </div>
           <div class="flex-items relative flex justify-end space-x-4 py-3">
-            <button class="rounded border border-blue-700 bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
+            <button class="rounded border border-blue-700 bg-blue-500 px-4 py-2 text-sm font-bold text-white hover:bg-blue-700">
               Find
             </button>
-            <button class="rounded border border-gray-700 bg-gray-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
+            <button class="rounded border border-gray-700 bg-gray-500 px-4 py-2 text-sm font-bold text-white hover:bg-blue-700">
               Reset
             </button>
           </div>

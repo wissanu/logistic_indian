@@ -100,7 +100,7 @@ export default class PieChartPanel extends PureComponent {
     return (
       <Card extra={"w-full pb-10 p-4 h-96"}>
         <header className="relative mb-4 flex items-center justify-between">
-          <div className="text-xl font-bold text-navy-700 dark:text-white">
+          <div className="text-sm font-bold text-navy-700 dark:text-white">
             Total Shipment By Consol Type
           </div>
         </header>

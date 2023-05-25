@@ -58,14 +58,12 @@ const data = [
 ];
 
 export default class ColumnChartPanel extends PureComponent {
-  static demoUrl = "https://codesandbox.io/s/simple-bar-chart-tpz8r";
-
   render() {
     return (
       <Card extra={"w-full pb-10 p-4 h-96"}>
         <header className="relative mb-4 flex items-center justify-between">
-          <div className="text-xl font-bold text-navy-700 dark:text-white">
-            Total Revenue (THB)
+          <div className="text-sm font-bold text-navy-700 dark:text-white">
+            Total Revenue (THB) {this.props.currentDay}
           </div>
         </header>
         <ResponsiveContainer width="100%" height="100%">

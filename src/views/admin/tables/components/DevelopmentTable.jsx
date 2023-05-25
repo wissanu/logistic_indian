@@ -42,7 +42,7 @@ const DevelopmentTable = (props) => {
   return (
     <Card extra={"w-full h-full p-4"}>
       <div class="relative flex items-center justify-between">
-        <div class="text-xl font-bold text-navy-700 dark:text-white">
+        <div class="text-sm font-bold text-navy-700 dark:text-white">
           Development Table
         </div>
         <CardMenu />
@@ -62,7 +62,7 @@ const DevelopmentTable = (props) => {
                 {headerGroup.headers.map((column, index) => (
                   <th
                     {...column.getHeaderProps(column.getSortByToggleProps())}
-                    className="border-b border-gray-200 pr-32 pb-[10px] text-start dark:!border-navy-700 "
+                    className="border-b border-gray-200 pb-[10px] pr-32 text-start dark:!border-navy-700 "
                     key={index}
                   >
                     <div className="text-xs font-bold tracking-wide text-gray-600">
@@ -112,7 +112,7 @@ const DevelopmentTable = (props) => {
                               return (
                                 <div
                                   key={key}
-                                  className="text-xl text-gray-600 dark:text-white"
+                                  className="text-sm text-gray-600 dark:text-white"
                                 >
                                   <DiWindows />
                                 </div>
@@ -141,7 +141,7 @@ const DevelopmentTable = (props) => {
                       <td
                         {...cell.getCellProps()}
                         key={index}
-                        className="pt-[14px] pb-3 text-[14px]"
+                        className="pb-3 pt-[14px] text-[14px]"
                       >
                         {data}
                       </td>
