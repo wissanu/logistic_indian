@@ -32,6 +32,8 @@ const ListResult = (props) => {
     page,
     nextPage,
     previousPage,
+    gotoPage,
+    pageCount,
     prepareRow,
     initialState,
   } = tableInstance;
@@ -93,7 +95,12 @@ const ListResult = (props) => {
             })}
           </tbody>
         </table>
-        <FooterTable nextPage={nextPage} previousPage={previousPage} />
+        <FooterTable
+          nextPage={nextPage}
+          previousPage={previousPage}
+          gotoPage={gotoPage}
+          pageCount={pageCount}
+        />
       </div>
     </Card>
   );

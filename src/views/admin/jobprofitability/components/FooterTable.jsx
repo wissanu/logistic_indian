@@ -1,4 +1,4 @@
-const FooterTable = ({ previousPage, nextPage }) => {
+const FooterTable = ({ previousPage, nextPage, gotoPage, pageCount }) => {
   return (
     <nav class="flex justify-center py-2">
       <ul class="inline-flex items-center -space-x-px">
@@ -23,6 +23,16 @@ const FooterTable = ({ previousPage, nextPage }) => {
             </svg>
           </button>
         </li>
+        {[...Array(pageCount - 1).keys()].map((i, index) => (
+          <li key={index}>
+            <button
+              onClick={() => gotoPage(i)}
+              class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            >
+              {i + 1}
+            </button>
+          </li>
+        ))}
         <li>
           <button
             onClick={() => nextPage()}
