@@ -7,13 +7,12 @@ import PieChartPanel from "./components/PieChartPanel";
 import { useState } from "react";
 
 const DashboardCommercial = () => {
-  const [daySelect, setDay] = useState();
+  const [typeSelect, setType] = useState();
   const [monthSelect, setMonth] = useState();
   const [yearSelect, setYear] = useState();
 
-  const dayRender = (event) => {
-    setDay(event.target.value);
-    console.log(daySelect);
+  const typeRender = (event) => {
+    setType(event.target.value);
   };
 
   const monthRender = (event) => {
@@ -28,20 +27,30 @@ const DashboardCommercial = () => {
     <div>
       <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
         <SearchPanel
-          dayRender={dayRender}
+          typeRender={typeRender}
           monthRender={monthRender}
           yearRender={yearRender}
-          currentDay={daySelect}
+          currentType={typeSelect}
+          monthSelect={monthSelect}
+          yearSelect={yearSelect}
         />
       </div>
       <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
         <ListResult columnsData={Columns} tableData={tableDataColumns} />
       </div>
       <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
-        <ColumnChartPanel currentDay={daySelect} />
+        <ColumnChartPanel
+          currentType={typeSelect}
+          monthSelect={monthSelect}
+          yearSelect={yearSelect}
+        />
       </div>
       <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
-        <PieChartPanel />
+        <PieChartPanel
+          currentType={typeSelect}
+          monthSelect={monthSelect}
+          yearSelect={yearSelect}
+        />
       </div>
     </div>
   );

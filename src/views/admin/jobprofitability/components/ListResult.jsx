@@ -1,5 +1,6 @@
 import CardMenu from "components/card/CardMenu";
 import Card from "components/card";
+import FooterTable from "./FooterTable";
 import React, { useMemo } from "react";
 import {
   useGlobalFilter,
@@ -29,6 +30,8 @@ const ListResult = (props) => {
     getTableBodyProps,
     headerGroups,
     page,
+    previousPage,
+    nextPage,
     prepareRow,
     initialState,
   } = tableInstance;
@@ -90,6 +93,7 @@ const ListResult = (props) => {
             })}
           </tbody>
         </table>
+        <FooterTable nextPage={nextPage} previousPage={previousPage} />
       </div>
     </Card>
   );
