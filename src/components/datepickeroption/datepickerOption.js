@@ -1,0 +1,26 @@
+export const DatepickerOption = {
+  title: "",
+  autoHide: true,
+  todayBtn: false,
+  clearBtn: true,
+  maxDate: new Date("2030-01-01"),
+  minDate: new Date("1950-01-01"),
+  theme: {
+    background: "bg-gray-100 dark:bg-gray-800",
+    todayBtn: "",
+    clearBtn: "",
+    icons: "",
+    text: "",
+    disabledText: "bg-grey-500 dark:bg-grey-600",
+    input: "",
+    inputIcon: "",
+    selected: "",
+  },
+  icons: {
+    prev: () => <span class="text-sm">Back</span>,
+    next: () => <span class="text-sm">Next</span>,
+  },
+  datepickerClassNames: "picking_date",
+  defaultDate: new Date("2022-01-01"),
+  language: "en",
+};

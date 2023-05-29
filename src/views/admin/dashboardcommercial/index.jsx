@@ -1,5 +1,5 @@
-import { Columns } from "./variables/columnsData";
-import tableDataColumns from "./variables/tableDataColumns.json";
+import { Columns } from "assets/dummy/columnsData";
+import tableDataColumns from "assets/dummy/tableDataColumns.json";
 import SearchPanel from "./components/SearchPanel";
 import ListResult from "./components/ListResult";
 import ColumnChartPanel from "./components/ColumnChartPanel";

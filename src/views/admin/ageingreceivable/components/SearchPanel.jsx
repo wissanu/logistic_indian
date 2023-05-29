@@ -1,9 +1,20 @@
 import CardMenu from "components/card/CardMenu";
 import Card from "components/card";
-
-import React, { useMemo } from "react";
+import Datepicker from "tailwind-datepicker-react";
+import { DatepickerOption } from "components/datepickeroption/datepickerOption";
+import React, { useMemo, useEffect, useState } from "react";
 
 const SearchPanel = () => {
+  const [show, setShow] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(null);
+  const handleChange = (selectedDate) => {
+    setSelectedDate(selectedDate);
+    console.log(selectedDate);
+  };
+  const handleClose = (state) => {
+    setShow(state);
+  };
+
   return (
     <Card extra={"w-full h-full p-4"}>
       <div class="relative flex items-center justify-between">
@@ -13,11 +24,17 @@ const SearchPanel = () => {
         <CardMenu />
       </div>
 
-      <div class="h-full overflow-x-scroll xl:overflow-x-hidden">
+      <div class="h-full">
         <div class="mt-5 grid grid-cols-4 gap-5 md:grid-cols-3">
           <div class="relative max-w-sm text-sm font-bold text-gray-700 dark:text-white">
             Date
-            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 pt-5">
+            <Datepicker
+              options={DatepickerOption}
+              onChange={handleChange}
+              show={show}
+              setShow={handleClose}
+            />
+            {/* <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 pt-5">
               <svg
                 aria-hidden="true"
                 class="h-5 w-5 text-gray-500 dark:text-gray-400"
@@ -34,10 +51,12 @@ const SearchPanel = () => {
             </div>
             <input
               datepicker
+              datepicker-autohide
               type="text"
               class="block w-full rounded-lg border border-gray-400 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
               placeholder=""
-            />
+              id="datepickerId"
+            /> */}
           </div>
           <div class="flex-items relative col-span-3 flex justify-end space-x-4 py-3 md:col-span-2">
             <button class="rounded border border-blue-700 bg-blue-500 px-4 py-2 text-sm font-bold text-white hover:bg-blue-700">
