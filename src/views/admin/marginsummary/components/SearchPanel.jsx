@@ -34,7 +34,7 @@ const SearchPanel = () => {
         <CardMenu />
       </div>
 
-      <div class="h-full overflow-x-scroll xl:overflow-x-hidden">
+      <div class="h-full">
         <div class="mt-5 grid grid-cols-4 gap-5 md:grid-cols-3">
           <div class="text-sm font-bold text-gray-700 dark:text-white">
             Job Order No

@@ -96,7 +96,7 @@ const ColumnsTable = (props) => {
                     }
                     return (
                       <td
-                        className="pb-[20px] pt-[14px] sm:text-[14px]"
+                        className="pb-[10px] pt-[10px] sm:text-[14px]"
                         {...cell.getCellProps()}
                         key={index}
                       >

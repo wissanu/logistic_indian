@@ -2,10 +2,8 @@ import { Columns } from "assets/dummy/columnsData";
 import tableDataColumns from "assets/dummy/tableDataColumns.json";
 import SearchPanel from "./components/SearchPanel";
 import ListResult from "./components/ListResult";
-import ColumnTotalRevevue from "./components/ColumnTotalRevevue";
-import PieChartShipmentByConsolType from "./components/PieChartShipmentByConsolType";
-import ColumnVolumnByWeek from "./components/ColumnVolumnByWeek";
-import PieChartVolumeByShip from "./components/PieChartVolumeByShip";
+import ColumnAgeingRec from "./components/ColumnAgeingRec";
+import ColumnAgeingPay from "./components/ColumnAgeingPay";
 import { useState } from "react";
 
 const DashboardCommercial = () => {
@@ -37,36 +35,23 @@ const DashboardCommercial = () => {
           yearSelect={yearSelect}
         />
       </div>
+
+      <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
+        <ColumnAgeingRec
+          currentType={typeSelect}
+          monthSelect={monthSelect}
+          yearSelect={yearSelect}
+        />
+      </div>
+      <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
+        <ColumnAgeingPay
+          currentType={typeSelect}
+          monthSelect={monthSelect}
+          yearSelect={yearSelect}
+        />
+      </div>
       <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
         <ListResult columnsData={Columns} tableData={tableDataColumns} />
-      </div>
-      <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
-        <ColumnTotalRevevue
-          currentType={typeSelect}
-          monthSelect={monthSelect}
-          yearSelect={yearSelect}
-        />
-      </div>
-      <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
-        <PieChartShipmentByConsolType
-          currentType={typeSelect}
-          monthSelect={monthSelect}
-          yearSelect={yearSelect}
-        />
-      </div>
-      <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
-        <PieChartVolumeByShip
-          currentType={typeSelect}
-          monthSelect={monthSelect}
-          yearSelect={yearSelect}
-        />
-      </div>
-      <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-1">
-        <ColumnVolumnByWeek
-          currentType={typeSelect}
-          monthSelect={monthSelect}
-          yearSelect={yearSelect}
-        />
       </div>
     </div>
   );

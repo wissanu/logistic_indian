@@ -14,56 +14,86 @@ import {
 
 const data = [
   {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
+    name: "Jan",
+    2011: 4000,
+    2012: 2400,
     amt: 2400,
   },
   {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
+    name: "Feb",
+    2011: 3000,
+    2012: 1398,
     amt: 2210,
   },
   {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
+    name: "Mar",
+    2011: 2000,
+    2012: 9800,
     amt: 2290,
   },
   {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
+    name: "Apr",
+    2011: 2780,
+    2012: 3908,
     amt: 2000,
   },
   {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
+    name: "May",
+    2011: 1890,
+    2012: 4800,
     amt: 2181,
   },
   {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
+    name: "Jun",
+    2011: 2390,
+    2012: 3800,
     amt: 2500,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
+    name: "Jul",
+    2011: 3490,
+    2012: 4300,
+    amt: 2100,
+  },
+  {
+    name: "Aug",
+    2011: 3490,
+    2012: 4300,
+    amt: 2100,
+  },
+  {
+    name: "Sep",
+    2011: 3490,
+    2012: 4300,
+    amt: 2100,
+  },
+  {
+    name: "Oct",
+    2011: 3490,
+    2012: 4300,
+    amt: 2100,
+  },
+  {
+    name: "Nov",
+    2011: 3490,
+    2012: 4300,
+    amt: 2100,
+  },
+  {
+    name: "Dec",
+    2011: 3490,
+    2012: 4300,
     amt: 2100,
   },
 ];
 
-export default class ColumnChartPanel extends PureComponent {
+export default class ColumnTotalRevevue extends PureComponent {
   render() {
     return (
       <Card extra={"w-full pb-10 p-4 h-96"}>
         <header className="relative mb-4 flex items-center justify-between">
           <div className="text-sm font-bold text-navy-700 dark:text-white">
-            Total Revenue (THB) {this.props.currentDay}
+            Total Revenue (THB)
           </div>
         </header>
         <ResponsiveContainer width="100%" height="100%">
@@ -82,9 +112,9 @@ export default class ColumnChartPanel extends PureComponent {
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
-            <Legend />
-            <Bar dataKey="pv" fill="#8884d8" />
-            <Bar dataKey="uv" fill="#82ca9d" />
+            <Legend layout="vertical" verticalAlign="top" align="right" />
+            <Bar dataKey="2011" fill="#8884d8" />
+            <Bar dataKey="2012" fill="#82ca9d" />
           </BarChart>
         </ResponsiveContainer>
       </Card>

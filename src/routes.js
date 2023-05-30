@@ -7,6 +7,7 @@ import AgeingReceivableView from "views/admin/ageingreceivable";
 import AgeingPayableView from "views/admin/ageingpayable";
 import JobProfitabilityView from "views/admin/jobprofitability";
 import DashboardCommercialView from "views/admin/dashboardcommercial";
+import DashboardFinanceView from "views/admin/dashboardfinancial";
 
 // Auth Imports
 import SignIn from "views/auth/SignIn";
@@ -28,7 +29,7 @@ const routes = [
     layout: "/admin",
     path: "financial_dashboard",
     icon: <MdViewModule className="h-6 w-6" />,
-    component: <DashboardCommercialView />,
+    component: <DashboardFinanceView />,
     secondary: true,
   },
   {

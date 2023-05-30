@@ -83,7 +83,7 @@ const ListResult = (props) => {
 
                     return (
                       <td
-                        className="pb-[20px] pt-[14px] sm:text-[14px]"
+                        className="pb-[10px] pt-[10px] sm:text-[14px]"
                         {...cell.getCellProps()}
                         key={index}
                       >
@@ -97,7 +97,12 @@ const ListResult = (props) => {
           </tbody>
         </table>
 
-        <FooterTable nextPage={nextPage} previousPage={previousPage} gotoPage={gotoPage} pageCount={pageCount}/>
+        <FooterTable
+          nextPage={nextPage}
+          previousPage={previousPage}
+          gotoPage={gotoPage}
+          pageCount={pageCount}
+        />
       </div>
     </Card>
   );
