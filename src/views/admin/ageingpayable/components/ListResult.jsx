@@ -19,6 +19,7 @@ const ListResult = (props) => {
     {
       columns,
       data,
+      initialState: { pageSize: 5 },
     },
     useGlobalFilter,
     useSortBy,
@@ -34,10 +35,8 @@ const ListResult = (props) => {
     previousPage,
     gotoPage,
     prepareRow,
-    initialState,
     pageCount,
   } = tableInstance;
-  initialState.pageSize = 5;
 
   return (
     <Card extra={"w-full pb-10 p-4 h-full"}>
