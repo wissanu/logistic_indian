@@ -50,7 +50,7 @@ const ListResult = (props) => {
 
       <div className="mt-8 overflow-auto">
         <table {...getTableProps()} className="w-full">
-          <thead class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-navy-700 dark:text-white">
+          <thead class="whitespace-nowrap bg-gray-50 text-xs uppercase text-gray-700 dark:bg-navy-700 dark:text-white">
             {headerGroups.map((headerGroup, index) => (
               <tr {...headerGroup.getHeaderGroupProps()} key={index}>
                 {headerGroup.headers.map((column, index) => (

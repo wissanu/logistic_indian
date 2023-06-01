@@ -23,7 +23,7 @@ const FooterTable = ({ previousPage, nextPage, gotoPage, pageCount }) => {
             </svg>
           </button>
         </li>
-        {[...Array(pageCount - 1).keys()].map((i, index) => (
+        {[...Array(pageCount).keys()].map((i, index) => (
           <li key={index}>
             <button
               onClick={() => gotoPage(i)}

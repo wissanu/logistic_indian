@@ -4,103 +4,59 @@ export const Columns = [
     accessor: "#",
   },
   {
-    Header: "SHIPMENT NO",
-    accessor: "shipment_no",
+    Header: "CUSTOMER",
+    accessor: "Customer",
   },
   {
-    Header: "TRACKING NO",
-    accessor: "tracking_no",
+    Header: "# OF TEU",
+    accessor: "#_of_TEU",
   },
   {
-    Header: "CARGO TYPE",
-    accessor: "cargo_type",
+    Header: "TOTAL REVENUE (INR)",
+    accessor: "Total_Revenue_(INR)",
   },
   {
-    Header: "CONSOL TYPE",
-    accessor: "consol_type",
+    Header: "ESTIMATE PROFIT (INR)",
+    accessor: "Estimate_Profit_(INR)",
   },
   {
-    Header: "BOOKING THRU",
-    accessor: "booking_thru",
+    Header: "REVENUE-PRIOR MONTH",
+    accessor: "Revenue_Prior_month",
   },
   {
-    Header: "SHIPPER",
-    accessor: "shipper",
+    Header: "REVENUE-CURRENT MONTH",
+    accessor: "Revenue_Current_month",
   },
   {
-    Header: "CONSIGNEE",
-    accessor: "consignee",
+    Header: "CONSOLE TYPE",
+    accessor: "Console_Type",
   },
   {
     Header: "CUSTOMER REMARK",
     accessor: "customer_remark",
   },
   {
-    Header: "BRANCH",
-    accessor: "branch",
+    Header: "NUMBER OF SHIPMENT",
+    accessor: "Number_of_Shipment",
   },
   {
-    Header: "LOADING PORT",
-    accessor: "loading_port",
+    Header: "SHIPPING LINE NAME",
+    accessor: "Shipping_Line_Name",
   },
   {
-    Header: "DISCHARGE PORT",
-    accessor: "discharge_port",
+    Header: "PERCENTAGE",
+    accessor: "Percentage",
   },
   {
-    Header: "HAWB NO",
-    accessor: "hawb_no",
+    Header: "NUMBER OF TEUS",
+    accessor: "Number_of_TEUs",
   },
   {
-    Header: "HAWB DATE",
-    accessor: "hawb_date",
+    Header: "WEEKLY",
+    accessor: "Weekly",
   },
   {
-    Header: "AWB NO",
-    accessor: "awb_no",
-  },
-  {
-    Header: "AIRLINE",
-    accessor: "airline",
-  },
-  {
-    Header: "FLIGHT NO",
-    accessor: "flight_no",
-  },
-  {
-    Header: "GOOD DESC",
-    accessor: "good_desc",
-  },
-  {
-    Header: "TOTAL PACKAGES",
-    accessor: "total_packages",
-  },
-  {
-    Header: "UNIT CHARGEABLE WT",
-    accessor: "unit_chargeable_wt",
-  },
-  {
-    Header: "UNIT",
-    accessor: "unit",
-  },
-  {
-    Header: "STATUS",
-    accessor: "status",
-  },
-  {
-    Header: "ETD",
-    accessor: "etd",
-  },
-  {
-    Header: "ESTIMATED REVENUE",
-    accessor: "estimated_revenue",
-  },
-  {
-    Header: "ESTIMATED COST",
-    accessor: "estimated_cost",
-  },
-  {
-    Header: "ESTIMATED PROFIT",
-    accessor: "estimated_profit",
+    Header: "VOLUME",
+    accessor: "Volume",
   },
 ];
