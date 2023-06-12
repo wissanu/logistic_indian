@@ -21,7 +21,6 @@ const routes = [
     layout: "/admin",
     path: "commercial_dashboard",
     icon: <MdViewModule className="h-6 w-6" />,
-    // component: <MainDashboard />,
     component: <DashboardCommercialView />,
   },
   {
@@ -59,6 +58,13 @@ const routes = [
     icon: <MdViewModule className="h-6 w-6" />,
     path: "job-profitability",
     component: <JobProfitabilityView />,
+  },
+  {
+    name: "Sign In",
+    layout: "/auth",
+    path: "sign-in",
+    icon: <MdViewModule className="h-6 w-6" />,
+    component: <SignIn />,
   },
 ];
 export default routes;
