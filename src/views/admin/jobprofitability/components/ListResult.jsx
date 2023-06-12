@@ -2,6 +2,8 @@ import CardMenu from "components/card/CardMenu";
 import Card from "components/card";
 import FooterTable from "./FooterTable";
 import React, { useMemo } from "react";
+import { BsArrowUp } from "react-icons/bs";
+import { BsArrowDown } from "react-icons/bs";
 import {
   useGlobalFilter,
   usePagination,
@@ -58,8 +60,21 @@ const ListResult = (props) => {
                     key={index}
                     className="border-b border-gray-200 pb-[10px] pr-14 text-start dark:!border-navy-700"
                   >
-                    <div className="flex w-full justify-between pr-10 text-xs tracking-wide text-gray-600 dark:text-white">
-                      {column.render("Header")}
+                    <div className="flex flex-row-reverse ">
+                      <div className="flex w-full justify-between pr-10 text-xs tracking-wide text-gray-600 dark:text-white">
+                        {column.render("Header")}
+                      </div>
+                      <span>
+                        {column.isSorted ? (
+                          column.isSortedDesc ? (
+                            <BsArrowUp />
+                          ) : (
+                            <BsArrowDown />
+                          )
+                        ) : (
+                          ""
+                        )}
+                      </span>
                     </div>
                   </th>
                 ))}
