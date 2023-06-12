@@ -50,9 +50,13 @@ const SearchPanel = (
             onChange={monthRender}
             class="focus:shadow-outline block w-full appearance-none rounded border border-gray-400 bg-white px-4 py-2 pr-8 leading-tight shadow hover:border-gray-500 focus:outline-none"
           >
-            {monthList.map((i) => (
-              <option>{i}</option>
-            ))}
+            {monthList.map((i) =>
+              i == currentMonth ? (
+                <option selected>{i}</option>
+              ) : (
+                <option>{i}</option>
+              )
+            )}
           </select>
         </div>
         <div class="relative mt-1 inline-block">
