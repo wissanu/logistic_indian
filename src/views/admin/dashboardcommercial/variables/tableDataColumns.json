@@ -2,19 +2,9 @@
   {
     "#": 1,
     "Customer": 2458,
-    "#_of_TEU": "12.Jan.2021",
-    "Total_Revenue_(INR)": 75.5,
-    "Estimate_Profit_(INR)": 75.5,
-    "Revenue_Prior_month": 75.5,
-    "Revenue_Current_month": 75.5,
-    "Console_Type": 75.5,
-    "customer_remark": 75.5,
-    "Number_of_Shipment": 75.5,
-    "Shipping_Line_Name": 75.5,
-    "Percentage": 75.5,
-    "Number_of_TEUs": 75.5,
-    "Weekly": 75.5,
-    "Volume": 75.5
+    "TEU": "12.Jan.2021",
+    "TotalRevenue": 75.5,
+    "EstimateProfit": 75.5
   },
   {
     "#": 2,
@@ -138,7 +128,7 @@
   {
     "#": 10,
     "Customer": 2458,
-    "#_of_TEU": "12.Jan.2021",
+    "TEU": "12.Jan.2099",
     "Total_Revenue_(INR)": 75.5,
     "Estimate_Profit_(INR)": 75.5,
     "Revenue_Prior_month": 75.5,

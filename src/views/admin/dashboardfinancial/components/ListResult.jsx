@@ -109,12 +109,6 @@ const ListResult = (props) => {
             })}
           </tbody>
         </table>
-        <FooterTable
-          nextPage={nextPage}
-          previousPage={previousPage}
-          gotoPage={gotoPage}
-          pageCount={pageCount}
-        />
       </div>
     </Card>
   );

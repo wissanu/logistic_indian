@@ -5,6 +5,7 @@ import RtlLayout from "layouts/rtl";
 import AdminLayout from "layouts/admin";
 import AuthLayout from "layouts/auth";
 import { useIsAuthenticated } from "react-auth-kit";
+
 const App = () => {
   const PrivateRoute = ({ path = "" }) => {
     const isAuthenticated = useIsAuthenticated();

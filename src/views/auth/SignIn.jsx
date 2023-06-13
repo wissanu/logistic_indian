@@ -36,7 +36,7 @@ export default function SignIn() {
     try {
       const response = await axios({
         method: "post",
-        url: "https://logistic-iot.n-digitaltech.com/logis/users/login",
+        url: "https://logistic-iot.n-digitaltech.com/IN/logis/users/login",
         data: {
           username: `${e.target[0].value}`,
           password: `${e.target[1].value}`,
@@ -61,7 +61,7 @@ export default function SignIn() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={testHandle}>
       <div className="mb-16 mt-16 flex h-full w-full items-center justify-center px-2 md:mx-0 md:px-0 lg:mb-10">
         {/* Sign in section */}
         <div className="mt-[10vh] w-full max-w-full flex-col items-center md:pl-4 lg:pl-0 xl:max-w-[420px]">

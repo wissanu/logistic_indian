@@ -12,10 +12,10 @@ import {
 } from "react-table";
 
 const ListResult = (props) => {
-  const { columnsData, tableData } = props;
-
+  let { columnsData, tableData } = props;
   const columns = useMemo(() => columnsData, [columnsData]);
-  const data = useMemo(() => tableData, [tableData]);
+  console.log(tableData.data);
+  const data = useMemo(() => tableData.data, [tableData.data]);
 
   const tableInstance = useTable(
     {
